@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Identifier type 
+
+*.Identifier
+.Identifier
+*Zone.Identifier
+Zone.Identifier
