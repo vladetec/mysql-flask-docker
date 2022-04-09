@@ -31,24 +31,26 @@ VALUES ('Citações ou frases.', 'Autor', 'Adicionado_Por');
 - :: `docker-compose up --build -d && docker-compose logs --tail=all -f`
 
 ## Links
-[Visualizar API](http://localhost:8000/)
-[Visualizar Aplicação](http://localhost:8001/)
-[phpMyAdmin](http://localhost:8080/)
--    :: User = dbuser
--    :: Password = dbpassword
-[Grafana Monitoramento](http://localhost:9878/login)
--    :: User = admin
--    :: Password = secret
+* [Visualizar API](http://localhost:8000/)
+* [Visualizar Aplicação](http://localhost:8001/)
+* [phpMyAdmin](http://localhost:8080/)
+-- User = dbuser
+-- Password = dbpassword
+* [Grafana Monitoramento](http://localhost:9878/login)
+-- User = admin
+-- Password = secret
 
 ### Interroper o Projeto
 - :: `docker-compose down`
 - :: `docker container stop $(docker container ls -aq) && docker container rm $(docker  container ls -aq)`
 
 # Comandos uteis
-:: `python -m venv env`
-:: `source env/bin/activate`
-:: `pip install flask flask-restful sqlalchemy pymysql flask-cors uwsgi`
-:: `docker exec -it mysql-client bash`
-:: `docker logs mysql-client`
-:: `docker run --name mysql-client -it --link db:mysql --rm mysql sh -c '-hmysql -uname_user -ppassword_user'`
-:: `docker exec -it <Id_Name_grafana> grafana-cli admin reset -admin -password <New admin password>`
+```
+:: python -m venv env
+:: source env/bin/activate
+:: pip install flask flask-restful sqlalchemy pymysql flask-cors uwsgi
+:: docker exec -it mysql-client bash
+:: docker logs mysql-client
+:: docker run --name mysql-client -it --link db:mysql --rm mysql sh -c '-hmysql -uname_user -ppassword_user
+:: docker exec -it <Id_Name_grafana> grafana-cli admin reset -admin -password <New admin password>
+```
