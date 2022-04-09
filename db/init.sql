@@ -8,4 +8,6 @@ CREATE TABLE `quote` (
 );
 
 INSERT INTO `quote` (`quote`, `quote_by`, `added_by`)
-VALUES ('A maioria dos softwares hoje é muito parecida com uma pirâmide egípcia com milhões de tijolos empilhados uns sobre os outros, sem integridade estrutural, mas feitos apenas por força bruta e milhares de escravos.', 'Allan Kay', 'Vlademir');
+VALUES 
+('Most software today is very much like an Egyptian pyramid with millions of bricks piled on top of each other, with no structural integrity, but just done by brute force and thousands of slaves.', 'Allan Kay', 'Vlademir'),
+('Beautiful is better than ugly. Explicit is better than implicit. Simple is better than complex. Complex is better than complicated. Flat is better than nested. Sparse is better than dense. Readability counts.', 'Tim Peters', 'Vlademir');
